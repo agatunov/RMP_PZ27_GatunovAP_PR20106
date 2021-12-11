@@ -65,7 +65,8 @@
             android:inputType="textPersonName"
             android:textColor="#9A9A9A"
             android:textSize="14sp"
-            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:importantForAutofill="no" />
 
     </FrameLayout>
 
@@ -114,7 +115,8 @@
             android:inputType="textEmailAddress"
             android:textColor="#9A9A9A"
             android:textSize="14sp"
-            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:importantForAutofill="no" />
 
     </FrameLayout>
 
@@ -164,7 +166,8 @@
             android:inputType="textPassword"
             android:textColor="#9A9A9A"
             android:textSize="14sp"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+            android:importantForAutofill="no" />
 
     </FrameLayout>
 
@@ -214,7 +217,8 @@
             android:inputType="textPassword"
             android:textColor="#9A9A9A"
             android:textSize="14sp"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+            android:importantForAutofill="no" />
 
     </FrameLayout>
 
@@ -243,7 +247,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="SIGN UP"
+            android:text="@string/sign_up"
             android:textColor="#FFFFFF"
             android:textSize="18sp" />
     </FrameLayout>

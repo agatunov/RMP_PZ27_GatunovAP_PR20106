@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class SignScreen extends AppCompatActivity {
     DBHelper dbHelper;
@@ -29,6 +30,7 @@ public class SignScreen extends AppCompatActivity {
         SQLiteDatabase database = dbHelper.getWritableDatabase();
         String login = loginEt.getText().toString();
         String password = passwordEt.getText().toString();
+        boolean check = false;
         Cursor cursor = database.query(DBHelper.TABLE_USERS, null, null, null, null, null, null);
         while (cursor.moveToNext()) {
             int idIndex = cursor.getColumnIndex(DBHelper.KEY_ID);
@@ -36,12 +38,22 @@ public class SignScreen extends AppCompatActivity {
             int passwordIndex = cursor.getColumnIndex(DBHelper.KEY_PASSWORD);
             String loginDb = cursor.getString(loginIndex);
             String passwordDb = cursor.getString(passwordIndex);
-            if (login.equals(loginDb) || password.equals(passwordDb)) {
+            if (login.equals(loginDb) && password.equals(passwordDb)) {
+                int emailIndex = cursor.getColumnIndex(DBHelper.KEY_EMAIL);
+                String emailDb = cursor.getString(emailIndex);
+                User.username = login;
+                User.email = emailDb;
                 dbHelper.close();
-                Intent i = new Intent(SignScreen.this, MainActivity.class);
+                Intent i = new Intent(SignScreen.this, StartScreen.class);
                 startActivity(i);
+                check = true;
             }
         }
+        if (!check){
+            Toast toast = Toast.makeText(getApplicationContext(), "Имя пользователя или пароль не были найдены", Toast.LENGTH_LONG);
+            toast.show();
+        }
+
         cursor.close();
         dbHelper.close();
     }

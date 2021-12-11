@@ -3,10 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ateop/AndroidStudioProjects/PZ27_GatunovAP_PR20106/app/src/main/res/layout/activity_history_screen.xml" value="0.5" />
         <entry key="..\:/Users/ateop/AndroidStudioProjects/PZ27_GatunovAP_PR20106/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/ateop/AndroidStudioProjects/PZ27_GatunovAP_PR20106/app/src/main/res/layout/activity_main2.xml" value="0.31614583333333335" />
+        <entry key="..\:/Users/ateop/AndroidStudioProjects/PZ27_GatunovAP_PR20106/app/src/main/res/layout/activity_menu_screen.xml" value="0.33" />
+        <entry key="..\:/Users/ateop/AndroidStudioProjects/PZ27_GatunovAP_PR20106/app/src/main/res/layout/activity_menus_screen.xml" value="0.5" />
+        <entry key="..\:/Users/ateop/AndroidStudioProjects/PZ27_GatunovAP_PR20106/app/src/main/res/layout/activity_settings_screen.xml" value="0.33" />
         <entry key="..\:/Users/ateop/AndroidStudioProjects/PZ27_GatunovAP_PR20106/app/src/main/res/layout/activity_signUp_screen.xml" value="0.33" />
-        <entry key="..\:/Users/ateop/AndroidStudioProjects/PZ27_GatunovAP_PR20106/app/src/main/res/layout/activity_sign_screen.xml" value="0.5" />
+        <entry key="..\:/Users/ateop/AndroidStudioProjects/PZ27_GatunovAP_PR20106/app/src/main/res/layout/activity_sign_screen.xml" value="0.25" />
         <entry key="..\:/Users/ateop/AndroidStudioProjects/PZ27_GatunovAP_PR20106/app/src/main/res/layout/activity_sign_up_screen.xml" value="0.5" />
+        <entry key="..\:/Users/ateop/AndroidStudioProjects/PZ27_GatunovAP_PR20106/app/src/main/res/layout/activity_start_screen.xml" value="0.33" />
       </map>
     </option>
   </component>

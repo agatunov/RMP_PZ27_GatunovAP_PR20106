@@ -64,7 +64,8 @@
             android:inputType="textPersonName"
             android:textColor="#9A9A9A"
             android:textSize="14sp"
-            tools:ignore="TouchTargetSizeCheck" />
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:importantForAutofill="no" />
 
     </FrameLayout>
 
@@ -114,7 +115,8 @@
             android:inputType="textPassword"
             android:textColor="#9A9A9A"
             android:textSize="14sp"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+            android:importantForAutofill="no" />
 
     </FrameLayout>
 
@@ -123,7 +125,7 @@
         android:layout_width="317dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="112dp"
-        android:text="SIGN IN"
+        android:text="@string/sign_in"
         android:onClick="signInClick"
         app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -137,13 +139,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="signUpClick"
-        android:text="Create A New Account?"
+        android:text="@string/create_a_new_account"
         android:textColor="#9A9A9A"
         app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
         app:layout_constraintVertical_bias="0.795"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

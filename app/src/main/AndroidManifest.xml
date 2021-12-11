@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PZ27_GatunovAP_PR20106">
         <activity
+            android:name=".SettingsScreen"
+            android:exported="true" />
+        <activity
+            android:name=".HistoryScreen"
+            android:exported="true" />
+        <activity
+            android:name=".MenusScreen"
+            android:exported="true" />
+        <activity
+            android:name=".StartScreen"
+            android:exported="true" />
+        <activity
             android:name=".SignUpScreen"
             android:exported="true" />
         <activity
